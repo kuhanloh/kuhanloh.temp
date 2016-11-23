@@ -12,7 +12,7 @@
         float: none;
         text-align: center;
     }
-    .about_phone {
+    .about_portfolio {
         text-align: center;
     }
     .video {
@@ -28,7 +28,7 @@
     .single_fun_facts {
         padding-bottom: 60px;
     }
-    .about_phone img {
+    .about_portfolio img {
         width: 100%;
     }
 }
@@ -45,7 +45,7 @@
         float: none;
         text-align: center;
     }
-    .about_phone {
+    .about_portfolio {
         text-align: center;
     }
     .call_to_action .col-md-3 {
@@ -87,6 +87,7 @@
     .video {
         padding-top: 00px;
     }
+    .vertical-align {display: -ms-flexbox; display: -webkit-flex;display: flex;-ms-flex-align: center;-webkit-align-items: center;-webkit-box-align: center;align-items: center; }
 }
 /* This Css is for large Deviced */
 
