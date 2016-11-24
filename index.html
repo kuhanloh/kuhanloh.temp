@@ -94,7 +94,7 @@
                 <div class="col-md-6 col-xs-12">
                     <div class="about_portfolio wow fadeInLeft animated" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInLeft;">
                         <a href="images/schedule-gif.min.gif" rel="prettyPhoto[pp_gal]">
-                            <img src="images/schedule-gif.min.gif" alt="Scatter Plot" style="width: 100%;" />
+                            <img src="images/temp.jpg" alt="Scatter Plot" style="width: 100%;" title="Scatter Plot Gif" data-src="images/schedule-gif.min.gif" class="lazy-load"/>
                         </a>
                     </div>
                 </div>
@@ -158,63 +158,67 @@
                                 as a guideline for how the blog should look like, and we had full reign over how the CMS would look like.
                             </p>
                         </div>
-                        <!--div class="single_about_area fadeInUp wow animated" data-wow-duration=".5s" data-wow-delay="1.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 1.5s; animation-name: fadeInUp;">
-                            <h3>Charting Libraries</h3>
-                            <p>After some initial research, we settled on <a href="https://github.com/c3js/c3" target="_blank">c3.js</a> as a charting library as it had the smallest learning curve, and it is based on d3. 
-                                Once the first prototype was produced however, we realized that c3 was not as dynamic and flexible as we required it to be.
-                                Which led to me starting work on the beast that is <a href="https://d3js.org/" target="_blank">d3.js</a>.  While daunting and scary at first, after playing around with it for
-                                a few days, I was able to produce a somewhat decent scatter plot.  The learning curve was quite steep, but it also allowed you to tweak 
-                                all the minute details, and customize it to your hearts desire.  One of the most time consuming parts however, was mapping the data received
-                                from the RESTful service to a d3 readable format.  It did not help that the data was dynamic and constantly updated.
+                        <div class="single_about_area fadeInUp wow animated" data-wow-duration=".5s" data-wow-delay="1.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 1.5s; animation-name: fadeInUp;">
+                            <h3>Technologies</h3>
+                            <p>Since this was technically a new project with no constraints, we could be using any of the newer technologies without any major drawbacks.  On one iteration, we tried out
+                                ReactJS due to the amount of praise it has been gaining in the Front-End community. It was a good learning experience and quite easy to work with, however 
+                                it still required quite few additional components to fully function.  Since most of our stuff runs on ASP.net, we decided that ReactJS did not fully meet all our criterias.
+                                Enter Angular 2.  None of my previous experience with Angular 1 mattered here.  It is an entirely new framework that is heavily component based.  Working with it, it
+                                felt a lot cleaner, and most of the things did make sense.  Working with the Inputs and Output Emitters was a blessing over the old Scopes.  Observables were also
+                                quite easy to pick up and most of these things worked out of the box, which is why we decided to stick with Angular 2 for the Blog CMS.  We also initially had SystemJS as a module
+                                loader, however after a few issues with it, we decided to switch to Webpack, as it could Uglify, Minify, did not require Gulp, and it was a lot easier to set up the app modules.  
+                                As for the actual blog view, we use a Razor view to generate the initial 5 blogs, then implemented our own version of infinite scroll with jQuery to dynamically load the other entries.  
                             </p>
-                        </div-->
+                        </div>
+                        <div class="single_about_area fadeInUp wow animated" data-wow-duration=".5s" data-wow-delay="1.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 1.5s; animation-name: fadeInUp;">
+                            <h3>Summary</h3>
+                            <p>Got to try out so many things and make so many different decisions regarding the Front-End side of this project.  It was exiciting and stressful at times, and there's currently way too
+                                much out there to choose from.  I think Angular 2 was a pretty decent choice for certain parts of the project, but there's always a trade off with these Frameworks.  Is it worth the learning
+                                period and messing about just to get things right?  If your current technologies still work and you're constrained for time, is it worth investing the resources into something
+                                new that is barely an improvement over what you have?  The initial plan was to render the blogs with ReactJS, but the trade off was not worth it to us.  Did we make the right choice?
+                                From the result of our product and time spent, I think we did.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-xs-12">
                     <div class="about_portfolio wow fadeInLeft animated" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInLeft;">
                         <a href="images/blogadmin-min.jpg" rel="prettyPhoto[pp_gal]">
-                            <img src="images/blogadmin-min.jpg" alt="Blog" style="width: 100%;" />
+                            <img src="images/blogadmin-min.jpg" data-src="images/blogadmin-min.jpg" alt="Blog" style="width: 100%;" title="Blog CMS Static" class="lazy-load"/>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <!--div class="screen_slider">
-            <div id="demo" class="wow bounceInRight" data-wow-duration="2s">
-                <div id="owl-demo" class="owl-carousel">
-                    <div class="item">
-                        <a href="images/dashboard-min.jpg" rel="prettyPhoto[pp_gal]">
-                            <img src="images/dashboard-min.jpg" alt="dashboard" />
+        <div class="container"><div class="portfolio-break"></div></div>
+        <div class="container about-content">
+            <div class="row vertical-align">
+                <div class="col-md-6 col-xs-12">
+                    <div class="about_portfolio wow fadeInLeft animated" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                        <a href="images/schedule-gif.min.gif" rel="prettyPhoto[pp_gal]">
+                            <img src="images/temp.jpg" alt="Interactive Dashboard" style="width: 100%;" title="Dashboard Gif" data-src="images/dashboard-min.gif" class="lazy-load"/>
                         </a>
-                        <p class="text-center item_text">Interactive dashboard built with Angular and D3</p>
                     </div>
-                    <div class="item">
-                        <a href="images/timeseries-min.png" rel="prettyPhoto[pp_gal]">
-                            <img src="images/timeseries-min.png" alt="timeseries" />
-                        </a>
-                        <p class="text-center item_text">Dynamic latency chart built with Angular and D3</p>
+                </div>
+                <div class="col-md-6 col-xs-12 wow fadeInRight animated" data-wow-duration="1s" data-wow-delay=".5s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInRight;">
+                    <div class="inner_about_title">
+                        <h2>Interactive Dashboard</h2>
+                        <p>A dashboard component with Angular and D3</p>
                     </div>
-                    <div class="item">
-                        <a href="images/blogadmin-min.jpg" rel="prettyPhoto[pp_gal]">
-                            <img src="images/blogadmin-min.jpg" alt="admin" />
-                        </a>
-                        <p class="text-center item_text">Blog Admin CMS tool built with Angular 2 and Bootstrap</p>
-                    </div>
-                    <div class="item">
-                        <a href="images/blog-min.jpg" rel="prettyPhoto[pp_gal]">
-                            <img src="images/blog-min.jpg" alt="blog" />
-                        </a>
-                        <p class="text-center item_text">ASP.NET Razor, jQuery, Bootstrap</p>
-                    </div>
-                    <div class="item">
-                        <a href="images/proj5-min.jpg" rel="prettyPhoto[pp_gal]">
-                            <img src="images/proj5-min.jpg" alt="admin" />
-                        </a>
-                        <p class="text-center item_text">jQuery, Bootstrap</p>
+                    <div class="inner_about_desc">
+                        <div class="single_about_area fadeInUp wow animated" data-wow-duration=".5s" data-wow-delay="1s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 1s; animation-name: fadeInUp;">
+                            <p>Shows an environment with it's services and tests</p>
+                            <p>Interactive as the user can create or modify from the visualization</p>
+                            <p>Provides a good first glance using colors and hovers</p>
+                            <p>Nested layouts with d3 was a pain yet fun</p>
+                            <p>Initial data is loaded via a RESTful api, then converted to a d3 friendly format</p>
+                            <p>Worked with a designer to iron out the clinks</p>
+                            <p>Fixed cross browser issues with height and width and current click position</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div-->
+        </div>
     </section>
     <section id="ABOUT" class="about parallax">
         <div class="section_overlay">
@@ -239,7 +243,8 @@
                                                         to design, and that’s where I come in.
                                                     </p>
                                                     <p>So far, I have been developing with Angular, Angular 2, jQuery, Bootstrap,
-                                                        HTML, CSS, among other technolgies. Visit my <a href="https://se.linkedin.com/in/kuhan-loh-06448874">LinkedIn</a>                                                        page for an updated list of my skills.</p>
+                                                        HTML, CSS, among other technolgies. Visit my <a href="https://se.linkedin.com/in/kuhan-loh-06448874">LinkedIn</a> page for an updated list of my skills.</p>
+                                                    <p>I've attended the FED Hackademy at Hursley and it was one of the best FED experiences! Only because I won an IBM thermos mug obviously.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -289,7 +294,13 @@
         </div>
     </footer>
     <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/jquery.unveil.js"></script>
     <script src="scripts/scripts.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(".lazy-load").unveil();
+    });
+    </script>
 </body>
 
 </html>
